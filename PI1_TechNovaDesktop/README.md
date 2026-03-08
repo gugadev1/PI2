@@ -1,37 +1,28 @@
-# PI1 - TechNova Solucoes Desktop
+# TechNova Solucoes Desktop
 
-Projeto base para o Projeto Integrador I, com documentacao, diagrama de classes e interface grafica em Java Swing.
+## Status do Projeto
+Em desenvolvimento.
 
-## Tecnologias
+## Tecnologias Aplicadas
 - Java
-- MySQL com persistencia via JDBC
-- Estrutura compativel com NetBeans/Maven
+- Java Swing
+- MySQL
+- JDBC
+- Maven
 
-## Estrutura
-- `docs/documentacao_tecnica_pi1.md`: Documento de projeto com requisitos
-- `docs/diagrama_classes.md`: Diagrama simples de classes
-- `src/`: Classes de dominio, DAO, servicos e interface Swing
+## Time de Desenvolvedores
+- Gusthavo Gassen
 
-## Telas implementadas (Etapa 3)
-- Login de usuario (Administrador e Funcionario)
-- Cadastro/consulta/edicao/remocao de produtos
-- Criacao de pedidos com validacao de estoque e alteracao de status
+## Objetivo do Software
+O TechNova Solucoes Desktop tem como objetivo modernizar o gerenciamento de lojas de informatica em ambiente local, substituindo planilhas e controles manuais por uma aplicacao unica para cadastro de produtos, clientes e pedidos.
 
-## Credenciais de teste
-- `admin@technova.com` / `admin123`
-- `vendas@technova.com` / `vendas123`
-
-## Banco de dados
-1. Execute o script `../bd_technova.sql` no MySQL Workbench para criar o schema `technova_db` e popular dados iniciais.
-2. Ajuste as credenciais de conexao em `src/ConexaoMySQL.java` conforme seu ambiente local.
-3. Garanta que o MySQL esteja ativo antes de executar o projeto.
-
-## Executar no Apache NetBeans
-1. Abra o Apache NetBeans.
-2. Clique em `File > Open Project` e selecione a pasta `PI1_TechNovaDesktop` (o NetBeans deve reconhecer como projeto Maven).
-3. Aguarde o download das dependencias Maven na primeira abertura.
-4. Confirme o JDK em `Project Properties > Build > Compile` (recomendado: Java 17).
-5. Execute com `Run Project` (`F6`).
-6. A aplicacao iniciara na tela `Login`.
+## Funcionalidades do Sistema (Requisitos)
+- RF001 - Autenticacao de usuario com email e senha (Administrador e Funcionario).
+- RF002 - Gerenciamento de produtos (cadastrar, editar, remover e listar).
+- RF003 - Gerenciamento de clientes (cadastrar, editar e listar).
+- RF004 - Registro de pedidos com inclusao de itens e calculo de valor total.
+- RF005 - Validacao de estoque para impedir finalizacao de pedido sem saldo.
+- RF006 - Atualizacao de status do pedido conforme perfil/permissao.
+- RF007 - Consulta de historico de pedidos por cliente e periodo.
 
 
